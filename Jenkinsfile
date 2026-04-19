@@ -10,7 +10,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t mlops-app .'
+                bat 'docker build -t mlops-app .'
             }
         }
 
@@ -21,3 +21,4 @@ pipeline {
         }
     }
 }
+
